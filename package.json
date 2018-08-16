@@ -1,0 +1,21 @@
+{
+  "name": "cg1",
+  "version": "0.0.1",
+  "description": "base package for df18 campground booths",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sfdx shane:org:delete; ./orgInit.sh",
+    "reset-data": "sfdx force:apex:execute -f scripts/dataWipe.cls && sfdx force:apex:execute -f scripts/init.cls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshanemc/cg1-lowcode.git"
+  },
+  "author": "Shane McLaughlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mshanemc/cg1-lowcode/issues"
+  },
+  "homepage": "https://github.com/mshanemc/cg1-lowcode#readme"
+}
