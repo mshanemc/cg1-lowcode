@@ -8,6 +8,14 @@
     "build": "sfdx shane:org:delete; ./orgInit.sh",
     "reset-data": "sfdx force:apex:execute -f scripts/dataWipe.cls && sfdx force:apex:execute -f scripts/init.cls"
   },
+  "nodemonConfig": {
+    "watch": [
+      "force-app"
+    ],
+    "exec": "sfdx force:source:push",
+    "ext": "cls,xml,json,js,trigger,cmp,css,design,svg",
+    "delay": "2500"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mshanemc/cg1-lowcode.git"
@@ -17,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/mshanemc/cg1-lowcode/issues"
   },
-  "homepage": "https://github.com/mshanemc/cg1-lowcode#readme"
+  "homepage": "https://github.com/mshanemc/cg1-lowcode#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
 }
