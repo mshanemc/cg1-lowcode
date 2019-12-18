@@ -1,13 +1,24 @@
 {
-    "orgName": "shane.mclaughlin Company",
-    "edition": "Developer",
-    "settings": {
-        "orgPreferenceSettings": {
-            "chatterEnabled": true,
-            "pathAssistantsEnabled": true,
-            "s1DesktopEnabled": true,
-            "s1EncryptedStoragePref2": false,
-            "selfSetPasswordInApi": true
-        }
+  "orgName": "shane.mclaughlin Company",
+  "adminEmail": "shane@mailinator.com",
+  "edition": "Developer",
+  "settings": {
+    "chatterSettings": {
+      "enableChatter": true
+    },
+    "pathAssistantSettings": {
+      "pathAssistantEnabled": true
+    },
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "securitySettings": {
+      "passwordPolicies": {
+        "enableSetPasswordInApi": true
+      }
     }
+  }
 }
